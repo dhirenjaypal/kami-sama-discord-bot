@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhirenjaypal/kami-sama-bot.git"
+    "url": "git+https://github.com/dhirenjaypal/kami-sama-discord-bot.git"
   },
   "keywords": [
     "discord.js",
@@ -25,7 +25,7 @@
   "author": "Dhiren Jaypal",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/dhirenjaypal/kami-sama-bot/issues"
+    "url": "https://github.com/dhirenjaypal/kami-sama-discord-bot/issues"
   },
-  "homepage": "https://github.com/dhirenjaypal/kami-sama-bot#readme"
+  "homepage": "https://github.com/dhirenjaypal/kami-sama-discord-bot#readme"
 }
