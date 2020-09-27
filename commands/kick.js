@@ -8,5 +8,8 @@ module.exports = {
         }
         const taggedUser = message.mentions.users.first();
         message.channel.send(`You wanted to kick: ${taggedUser.username}`);
+
+		message.guild.channels.cache.get("759794285238419507").send(`${message.author} tried to kick ${message.mentions.users.first().username}`)
+
 	},
 };
