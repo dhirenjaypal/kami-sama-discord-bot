@@ -82,4 +82,25 @@ client.on('message', message => {
 
 });
 
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.cache.find(ch => ch.name === 'bot-development');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+
+
+		const welcomeEmbed = new Discord.MessageEmbed()
+            .setColor('#999999')
+            //.setTitle('Welcome')
+            .setDescription(`**Welcome to our server <@${member}>**`)
+            //.setThumbnail
+            .setImage(`${member.displayAvatarURL({ format: "png", dynamic: true >
+
+        channel.send(exampleEmbed);
+
+  //channel.send(`Welcome to the server, ${member}`);
+});
+
+
 client.login(token);
