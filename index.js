@@ -95,7 +95,7 @@ client.on('guildMemberAdd', member => {
             //.setTitle('Welcome')
             .setDescription(`**Welcome to our server <@${member}>**`)
             //.setThumbnail
-            .setImage(`${member.displayAvatarURL({ format: "png", dynamic: true >
+            .setImage(`${member.displayAvatarURL({ format: "png", dynamic: true })}`)
 
         channel.send(exampleEmbed);
 
