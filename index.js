@@ -22,10 +22,12 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
-	console.log('Ready!');
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on('message', message => {
+	console.log(`${message.author.tag} : ${message.content}`);
+
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
